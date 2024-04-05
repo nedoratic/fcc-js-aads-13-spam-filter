@@ -6,6 +6,9 @@ const checkMessageButton = document.getElementById('check-message-btn');
 // Help
 const helpRegex = /please help|assist me/i;
 
+// Dollar
+const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
+
 // Is Spam Function
 const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
