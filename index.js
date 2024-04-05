@@ -9,6 +9,9 @@ const helpRegex = /please help|assist me/i;
 // Dollar
 const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 
+// Free
+const freeRegex = /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
+
 // Is Spam Function
 const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
